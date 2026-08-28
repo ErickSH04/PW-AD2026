@@ -23,5 +23,5 @@
 
 ## Información de contacto
 
-- **Correo:** ericksilva975@gmail.com / joersilvahe@ittepic.edu.mx
-- **Teléfono:** 3314134210
+**Correo:** ericksilva975@gmail.com / joersilvahe@ittepic.edu.mx
+
