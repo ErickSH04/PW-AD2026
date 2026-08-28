@@ -1,161 +1,121 @@
-# Comandos de git
+# Comandos de Git
 
-## 1.- Comando:
+## 1.- git init:
+ 
+**Descripción del comando:** Crea un nuevo repositorio Git en el directorio actual
 
-**Comando:** 
+**Ejemplo real de uso:** Crear un repositorio: Entras a la carpeta de un proyecto y ejecutar git init para comenzar a controlar sus versiones.
 
-**Descripción del comando:** 
+## 2.- git clone: 
 
-**Ejemplo real de uso:** 
+**Descripción del comando:** Copia un repositorio remoto a tu computadora, incluyendo su historial.
 
-## 2.- Comando:
+**Ejemplo real de uso:** Descargar un proyecto: git clone + url para obtener una copia del proyecto.
 
-**Comando:** 
+## 3.- git status:
 
-**Descripción del comando:** 
+**Descripción del comando:** Muestra el estado actual del repositorio y los archivos modificados, agregados o pendientes.
 
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:** Revisar cambios: Antes de hacer un commit se ejecuta git status para saber qué archivos han sido modificados. 
 
-## 3.- Comando:
+## 4.- git add:
 
-**Comando:** 
+**Descripción del comando:** Agrega archivos al área de preparación para incluirlos en el próximo commit.
 
-**Descripción del comando:** 
+**Ejemplo real de uso:**  Preparar un archivo: git add archivo.extension para indicar que quieres incluir ese archivo en el siguiente commit.
 
-**Ejemplo real de uso:** 
+## 5.- git add .: 
 
-## 4.- Comando:
+**Descripción del comando:** Agrega todos los archivos modificados y nuevos del directorio actual al área de preparación.
 
-**Comando:** 
+**Ejemplo real de uso:**  Preparar varios cambios: Después de modificar archivos ejecutar el comando git add. para preparar dichos cambios.
 
-**Descripción del comando:** 
+## 6.- git commit:
 
-**Ejemplo real de uso:** 
+**Descripción del comando:**  Guarda en el historial los cambios que fueron agregados al área de preparación.
 
-## 5.- Comando:
+**Ejemplo real de uso:**  Guardar un versión: git commit -m "agregar formulario de registro" para registrar una nueva versión del proyecto. 
 
-**Comando:** 
+## 7.- git log:  
 
-**Descripción del comando:** 
+**Descripción del comando:** Muestra el historial de commit realizados en el repositorio.
 
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:** Consultar versiones: Si ejecutas el comando git log podrás saber qué cambios se han realizado y quién los realizó. 
 
-## 6.- Comando:
+## 8.- git diff:
 
-**Comando:** 
+**Descripción del comando:**  Muestra las diferencias entre los cambios actuales y una versión anterior o el estado registrado.
 
-**Descripción del comando:** 
+**Ejemplo real de uso:** Revisar modificaciones: Antes de hacer commit, ejecutar git diff para comprobar exactamente qué líneas fueron cambiadas.
 
-**Ejemplo real de uso:** 
+## 9.- git branch:
 
-## 7.- Comando:
+**Descripción del comando:**  Permite crear, consultar o administrar ramas del repositorio.
 
-**Comando:** 
+**Ejemplo real de uso:** Crear una rama: git branch + nombreRama, crea una rama para trabajar en nuevas funciones sin modificar directamente la principal.
 
-**Descripción del comando:** 
+## 10.- git switch:
 
-**Ejemplo real de uso:** 
+**Descripción del comando:**  Permite cambiar entre ramas o crear y cambiar a una nueva rama.
 
-## 8.- Comando:
+**Ejemplo real de uso:** Cambiar rama: git switch + nombreRama, te lleva a la rama donde estás trabajando en una nueva función.
 
-**Comando:** 
+## 11.- git merge:
 
-**Descripción del comando:** 
+**Descripción del comando:**  Permite combinar los cambios de una rama con otra.
 
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:** Integrar una función: desde la rama principal, ejecutar git merge +  ramaNueva para incorporar a la rama principal los cambios realizados en la ramaNueva.
 
-## 9.- Comando:
+## 12.- git remote:
 
-**Comando:** 
+**Descripción del comando:**  Permite administrar las conexiones entre el repositorio local y repositorios remotos.
 
-**Descripción del comando:** 
+**Ejemplo real de uso:**  Agregar GitHub: git remote add origin + url, conectando un repositorio local a uno remoto.
 
-**Ejemplo real de uso:** 
+## 13.- git fetch:
 
-## 10.- Comando:
+**Descripción del comando:** Descarga información y cambios del repositorio remoto sin incorporarlos automáticamente a la rama actual. 
 
-**Comando:** 
+**Ejemplo real de uso:** Consultar actualizaciones: git fetch origin, permite comprobar los cambios que existen en GitHub antes de decidir si integrarlos.
 
-**Descripción del comando:** 
+## 14.- git pull:
 
-**Ejemplo real de uso:** 
+**Descripción del comando:**  Descarga los cambios del repositorio remoto sin incorporarlos automáticamente a la rama actual. 
 
-## 11.- Comando:
+**Ejemplo real de uso:**Actualizar el proyecto: git pull origin main, obtiene los últimos cambios de la rama principal desde el repositorio remoto.
 
-**Comando:** 
+## 15.- git push:
 
-**Descripción del comando:** 
+**Descripción del comando:** Envía los commits locales a un repositorio remoto. 
 
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:** Subir los cambios: git push origin main, publica los commits realizados localmente en la rama principal.
 
-## 12.- Comando:
+## 16.- git reset:
 
-**Comando:** 
+**Descripción del comando:**  Permite deshacer cambios en el historial o retirar archivos del área de preparación, dependiendo de las opciones utilizadas.
 
-**Descripción del comando:** 
+**Ejemplo real de uso:** Quitar un archivo del área de preparación: git reset + nombre del archivo, restaura el archivo a su estado registrado y elimina las modificaciones locales no guardadas. 
 
-**Ejemplo real de uso:** 
+## 17.- git restore:
 
-## 13.- Comando:
+**Descripción del comando:** Permite restaurar archivos a una versión anterior, descartando cambios locales.
 
-**Comando:** 
+**Ejemplo real de uso:**  git restore + nombreArchivo, restaura el archivo a su estado registrado y elimina modificaciones locales no guardadas-
 
-**Descripción del comando:** 
+## 18.- git stash:
 
-**Ejemplo real de uso:** 
+**Descripción del comando:** Guarda temporalmente cambios que todavía no deseas confirmar mediante un commit.
 
-## 14.- Comando:
+**Ejemplo real de uso:** Cambiar de tarea: Tienes cambios sin terminar y necesitas cambiar de rama, Al ejecutar el comando git stash guardas los cambio temporalmente.
 
-**Comando:** 
+## 19.- git tag:
 
-**Descripción del comando:** 
+**Descripción del comando:**  Crea etiquetas que permiten identificar versiones específicas del proyecto.
 
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:**  Marcar una versión: git tag + nombreVersion, identifica el commit actual con el nombre que se la haya dado a la versión que se le haya puesto en la etiqueta.
 
-## 15.- Comando:
+## 20.- git rm:
 
-**Comando:** 
+**Descripción del comando:**  Elimina archivos del proyecto y registra su eliminación para el siguiente commit.
 
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
-
-## 16.- Comando:
-
-**Comando:** 
-
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
-
-## 17.- Comando:
-
-**Comando:** 
-
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
-
-## 18.- Comando:
-
-**Comando:** 
-
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
-
-## 19.- Comando:
-
-**Comando:** 
-
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
-
-## 20.- Comando:
-
-**Comando:** 
-
-**Descripción del comando:** 
-
-**Ejemplo real de uso:** 
+**Ejemplo real de uso:**  Eliminar un archivo: git rm + nombreArchivo, eliminar el archivo y prepara su eliminación para el próximo commit.
