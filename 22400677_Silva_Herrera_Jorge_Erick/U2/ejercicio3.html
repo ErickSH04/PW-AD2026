@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel World</title>
+    </head>
+    <body>
+        <h2 id="Inicio">La mejor agencia de viajes para conocer los destinos más increíbles de México y el mundo.</h2>
+        <hr>
+        <h1>Menú</h1>
+        <a href="#Inicio">Inicio</a><br>
+        <a href="#Destinos">Destinos</a><br>
+        <a href="#Promociones">Promociones</a><br>
+        <a href="#Paquetes">Paquetes</a><br>
+        <a href="#Contacto">Contacto</a>
+        <hr>
+        <h2>Bienvenido</h2>
+        <br>
+        <p>En <strong>Travel World</strong> ofrecemos paquetes turísticos para toda la familia. Nuestro objetivo es brindar las mejores experiencias de viaje con excelente servicio y precios accesibles.</p><br>
+        <img src="imagen.jpg" alt="Imagen de bienvenida">
+        <hr>
+        <h2 id="Destinos">Destinos Populares</h2>
+        <h2>Playas</h2>
+        <ul>
+            <li>Cancún</li>
+            <li>Puerto Vallarta</li>
+            <li>Los Cabos</li>
+            <li>Riviera Maya</li>
+        </ul>
+        <h2>Pueblos Mágicos</h2>
+        <ol>
+            <li>Tequila</li>
+            <li>Mazamitla</li>
+            <li>Real de Catorce</li>
+            <li>Taxco</li>
+        </ol>
+        <hr>
+        <h2 id="Promociones">Promociones</h2>
+        <p>Reserva durante este mes y obtén un 20% de descuento en paquetes seleccionados.</p><br>
+        <p>Los primeros 50 clientes recibirán un tour gratuito en su destino.</p>
+        <hr>
+        <h2 id="Paquetes">Paquetes Disponibles</h2>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Destino</th>
+                <th>Días</th>
+                <th>Hotel</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Cancún</td>
+                <td>5</td>
+                <td>5 estrellas</td>
+                <td>$12,500</td>
+            </tr>
+            <tr>
+                <td>Puerto Vallarta</td>
+                <td>4</td>
+                <td>4 Estrellas</td>
+                <td>$9,800</td>
+            </tr>
+            <tr>
+                <td>Los Cabos</td>
+                <td>6</td>
+                <td>5 Estrellas</td>
+                <td>$15,300</td>
+            </tr>
+            <tr>
+                <td>Mazamitla</td>
+                <td>3</td>
+                <td>Cabaña</td>
+                <td>$5,900</td>
+            </tr>
+            <tr>
+                <td>Riviera Maya</td>
+                <td>7</td>
+                <td>Todo Incluido</td>
+                <td>$18,900</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>¿Por qué Viajar con Nosotros?</h2>
+        <br>
+        <ul>
+            <li>Hoteles Certificados</li>
+            <li>Guías Turísticos</li>
+            <li>Seguro de Viajero</li>
+            <li>Facilidades de pago</li>
+        </ul>
+        <hr>
+
+        <!-- SECCIÓN AGREGADA DESDE LA IMAGEN -->
+        <h2>Formulario de Reservación</h2>
+        <form>
+            <fieldset>
+                <legend>Solicitud de Reservación</legend>
+                <table border="1"">
+                    <tr>
+                        <th colspan="4" align="center">Datos del Cliente</th>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre"></td>
+                        <td>Correo</td>
+                        <td><input type="email" name="correo"></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td><input type="password" name="contrasena"></td>
+                        <td>Edad</td>
+                        <td><input type="number" name="edad"></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de viaje</td>
+                        <td><input type="date" name="fecha_viaje"></td>
+                        <td>Hora de salida</td>
+                        <td><input type="time" name="hora_salida"></td>
+                    </tr>
+                    <tr>
+                        <td>Número de viajeros</td>
+                        <td><input type="number" name="numero_viajeros"></td>
+                        <td>Presupuesto</td>
+                        <td><input type="range" name="presupuesto"></td>
+                    </tr>
+                    <tr>
+                        <td>Color de pulsera</td>
+                        <td><input type="color" name="color_pulsera"></td>
+                        <td>Identificación</td>
+                        <td><input type="file" name="identificacion"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" align="center">Servicios</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="checkbox" id="transporte" name="servicios" value="transporte">
+                            <label for="transporte">Transporte</label><br>
+                            <input type="checkbox" id="hotel" name="servicios" value="hotel">
+                            <label for="hotel">Hotel</label><br>
+                            <input type="checkbox" id="desayuno" name="servicios" value="desayuno">
+                            <label for="desayuno">Desayuno</label><br>
+                            <input type="checkbox" id="seguro" name="servicios" value="seguro">
+                            <label for="seguro">Seguro de viaje</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" align="center">Tipo de Habitación</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="radio" id="individual" name="habitacion" value="individual">
+                            <label for="individual">Individual</label>
+                            <input type="radio" id="doble" name="habitacion" value="doble">
+                            <label for="doble">Doble</label>
+                            <input type="radio" id="familiar" name="habitacion" value="familiar">
+                            <label for="familiar">Familiar</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Destino</td>
+                        <td>
+                            <select name="destino">
+                                <option value="cancun">Cancún</option>
+                                <option value="puerto_vallarta">Puerto Vallarta</option>
+                                <option value="los_cabos">Los Cabos</option>
+                                <option value="mazamitla">Mazamitla</option>
+                                <option value="riviera_maya">Riviera Maya</option>
+                            </select>
+                        </td>
+                        <td>Forma de pago</td>
+                        <td>
+                            <select name="forma_pago">
+                                <option value="tarjeta">Tarjeta</option>
+                                <option value="efectivo">Efectivo</option>
+                                <option value="transferencia">Transferencia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comentarios</td>
+                        <td colspan="3">
+                            <textarea name="comentarios" rows="4" style="width: 98%;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Reservar">
+                        </td>
+                        <td colspan="2" align="center">
+                            <input type="reset" value="Limpiar">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <hr>
+        <h2 id="Contacto">Información de Contacto</h2>
+        <p>Dirección: Av. Principal #100, Tepic, Nayarit.</p>
+        <p>Teléfono: (311) 123-4567</p>
+        <p>Correo: contacto@travelworld.com</p>
+
+        <h3>Enlaces de interés</h3>
+        <a href="#">Buscar más destinos</a><br>
+        <a href="#Inicio">Volver al inicio</a><br>
+        <a href="#Paquetes">Ver paquetes</a>
+    </body>
+</html>
